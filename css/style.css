@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+.box1 {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.box2 {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.box3 {
+  width: 300px;
+  height: 300px;
+}
+/* Q1 */
+.box-size {
+  background: #ff0000;
+}
+
+/* Q2 */
+.box-color {
+  background: #ff0000;
+}
+
+/* Q3 */
+.box-margin {
+  display: flex;
+  justify-content: center;
+}
+.bluebox3 {
+  background: #0008ff;
+  margin-right: 150px;
+}
+.greenbox3 {
+  background: #22ff00;
+}
+
+/* Q4 */
+.box-float {
+  display: flex;
+  justify-content: center;
+}
+.redbox4 {
+  background: #ff0000;
+  float: left;
+}
+.bluebox4 {
+  background: #0008ff;
+  float: left;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Q5 */
+.box-flex {
+  display: flex;
+  justify-content: center;
+}
+.redbox5 {
+  background: #ff0000;
+}
+.bluebox5 {
+  background: #0008ff;
+}
+.orangebox5 {
+  background: #ff8400;
+}
+
+/* Q6 */
+.box-flex2 {
+  display: flex;
+  justify-content: center;
+}
+.greenbox6 {
+  background: #00ff51;
+}
+.yellowbox6 {
+  background: #d4ff00;
+}
+.purplebox6 {
+  background: #ff00e1;
+}
+
+/* Q7 */
+.box-display {
+  display: flex;
+  justify-content: center;
+}
+.redbox7 {
+  background: #ff0000;
+  display: block;
+}
+.bluebox7{
+  background: #0008ff;
+  display: none;
+}
+.greenbox7 {
+  background: #00ff51;
+}
+
+@media screen and (max-width: 960px) {
+  /* Q1 */
+  .box-size {
+    width: 200px;
+    height: 200px;
+  }
+  /* Q2 */
+  .box-color {
+    background: #007bff;
+  }
+  /* Q3 */
+  .bluebox3 {
+    margin-right: 50px;
+  }
+  /* Q4 */
+  .box-float {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .redbox4 {
+    clear: left;
+  }
+  .bluebox4 {
+    clear: left;
+  }
+  /* Q5 */
+  .box-flex {
+    flex-direction: row-reverse;
+  }
+  /* Q6 */
+  .greenbox6 {
+    order: 2;
+  }
+  .yellowbox6 {
+    order: 3;
+  }
+  .purplebox6 {
+    order: 1;
+  }
+  /* Q7 */
+  .redbox7 {
+    background: #ff0000;
+    display: none;
+  }
+  .bluebox7{
+    background: #0008ff;
+    display: block;
+  }
+
+}
