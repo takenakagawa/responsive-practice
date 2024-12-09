@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 .box1 {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -11,18 +11,15 @@
 .box2 {
   width: 300px;
   height: 300px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.box3 {
-  width: 300px;
-  height: 300px;
 }
 /* Q1 */
 .box-size {
+  width: 400px;
+  height: 400px;
   background: #ff0000;
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 /* Q2 */
@@ -44,8 +41,12 @@
 }
 
 /* Q4 */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .box-float {
-  display: flex;
   justify-content: center;
 }
 .redbox4 {
@@ -56,16 +57,13 @@
   background: #0008ff;
   float: left;
 }
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
+
 
 /* Q5 */
 .box-flex {
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
 .redbox5 {
   background: #ff0000;
@@ -84,12 +82,15 @@
 }
 .greenbox6 {
   background: #00ff51;
+  order: 1;
 }
 .yellowbox6 {
   background: #d4ff00;
+  order: 2;
 }
 .purplebox6 {
   background: #ff00e1;
+  order: 3;
 }
 
 /* Q7 */
@@ -124,16 +125,8 @@
     margin-right: 50px;
   }
   /* Q4 */
-  .box-float {
-    content: "";
-    display: block;
-    clear: both;
-  }
   .redbox4 {
-    clear: left;
-  }
-  .bluebox4 {
-    clear: left;
+    float: none;
   }
   /* Q5 */
   .box-flex {
@@ -151,11 +144,9 @@
   }
   /* Q7 */
   .redbox7 {
-    background: #ff0000;
     display: none;
   }
   .bluebox7{
-    background: #0008ff;
     display: block;
   }
 
